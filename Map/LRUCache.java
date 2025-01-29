@@ -9,6 +9,7 @@ public class LRCcache<K,V> extends LinkedHashMap<K,V> {
 
     public LRCcache(int capacity) {
         //IF accesorder is set true then it will maintain order as per recently used. 
+        //Load Factor controls when the HashMap resizes.
         super(capacity,2,true);
         this.capacity = capacity;
     }
